@@ -27,6 +27,7 @@ template t b = do
 
 mainPage :: Html
 mainPage = template "Hello World!" $ do
-    p $ "Hello World"   
+    p $ "Hello World"  
+    a ! href "https://github.com/frankhucek" $ "My Github"
     H.form ! action "http://frankhucek.com:1313" ! method "get" $ 
         input ! type_ "submit" ! value "Click" -- ! name "Submit"
